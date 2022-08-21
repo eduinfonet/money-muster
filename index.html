@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mess life calculation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/52801316e9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="bg-gradient-to-r from-cyan-200 to-blue-400 h-screen">    
+    <section class="" >
+      <div class="">
+        <h1 class="text-5xl text-center p-4 text-emerald-600 text-white ">Money Saving Machine <i class="fa-solid fa-sack-dollar text-orange-300 "></i></h1>
+        <div class=" mx-auto card card-side bg-base-100 shadow-xl w-9/12 justify-center label">
+         <div>
+             <figure>
+            <img src="assets/img/calculate.jpg" alt="" class="rounded-l-2xl"/>
+          </figure>
+         </div>
+
+          <div class="card-body justify-center ">
+            <h2 class="card-title justify-center ">Monthly Budget    </h2>
+
+            <div class="card-title justify-center ">  
+                <label for="">Income:  </label>
+                <input id="monthly-income" 
+                    type="number"
+                    placeholder="Type here"
+                    class="input input-bordered "
+                  />
+                </div>
+           
+             <h1 class="card-title card-actions justify-center">Expenses</h1>
+             <div class="card-title justify-center ">  
+                <label for="">Food:  </label>
+                <input id="food-item"
+                    type="number"
+                    placeholder="Type here"
+                    class="input input-bordered "
+                  />
+                </div>
+
+                 <div class="card-title justify-center ">  
+                <label for="">Rent:  </label>
+                <input id="rent-item"
+                    type="number"
+                    placeholder="Type here"
+                    class="input input-bordered "
+                  />
+                </div>
+
+                 <div class="card-title justify-center ">  
+                <label for="">Cloths:  </label>
+                <input id="cloths-item"
+                    type="number"
+                    placeholder="Type here"
+                    class="input input-bordered "
+                  />
+                </div>
+
+                <div class=" mx-auto  text-2xl bg-indigo-400 py-4 px-5 text-white text-center  w-1/2 rounded">
+                  <button id="calculate-items" class="" >Calculate</button>
+                </div>
+                
+
+                <div class="card-title justify-center ">
+                   <label  for="">Total Expenses: $<span id="total-expensis">00                         
+                  </span>   </label>
+                 </div>
+
+                  <div class="card-title justify-center ">
+                   <h1  for="">Monthly Balance: $<span id="monthly-balance">00                         
+                  </span>   </h1>
+                 </div>
+
+                 
+                 <div class="card-title justify-center ">  
+                <label for="">Saving Percentage:  </label>
+                <input id="monthly-saving"
+                    type="number"
+                    placeholder="Type here"
+                    class="input 6/12 input-bordered"
+                  
+                  />
+                  <span>%</span>
+                  <button id="btn-saving" class=" text-2xl  card-actions justify-center bg-indigo-400 py-2 px-5 text-white rounded ">Save</button>
+
+                </div>
+
+                <div class="card-title justify-center ">
+                   <label  for="">Saving Amount: $<span id="saving-amount">00                         
+                  </span>   </label>
+                 </div>
+
+                 <div class="card-title justify-center ">
+                   <label  for="">Remaining Balance: $<span id="remaining-balance">00                         
+                  </span>   </label>
+                 </div>
+
+        
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
